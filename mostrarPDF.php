@@ -38,7 +38,7 @@ $myPDF->SetHeader("Morel, Melany Lucia||Página nº{nbpg}");
     //Cuerpo (Título, listado, con su respectiva foto y sin los botones)
 $myPDF->WriteHTML($empleadosHtml);
     //Pie de página (url del sitio web)
-$myPDF->SetFooter("{DATE j-m-Y}||CAMBIAR***************************LinkHeroku");
+$myPDF->SetFooter("{DATE j-m-Y}||tp05ajaxpdopdf.herokuapp.com");
     //El archivo .pdf contendrá clave, la misma será el número de D.N.I. del usuario logueado.
 $myPDF->SetProtection(array('copy', 'print'), $dni, "admin");
     //muestro
