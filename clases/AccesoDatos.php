@@ -7,9 +7,9 @@ class AccesoDatos
     private function __construct()
     {
         try {
-            $usuario='root';
-            $clave='';
-            $this->_objetoPDO = new PDO('mysql:host=localhost;dbname=empleados;charset=utf8', $usuario, $clave);
+            $usuario='luciamorel1';
+            $clave='12345678';
+            $this->_objetoPDO = new PDO('mysql:host=db4free;dbname=empleados0;charset=utf8', $usuario, $clave);
  
         } catch (PDOException $e) {
  
