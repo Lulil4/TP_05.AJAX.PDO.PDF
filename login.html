@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./javascript/funciones.js"></script>
+        <link rel="icon" type="image/png" href="./img/icon.png" />
+        <title>HTML 5 – Formulario Login</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/estiloLogin.css">
+    </head>
+    <body>
+        <h2>Login</h2>
+        <form id=formLogin method="POST" action="./backend/verificarUsuario.php">
+        <table align="center">
+            <tr>
+                <td colspan="2"><h4>Ingreso de credenciales</h4></td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr></td>
+            </tr>
+            <tr> 
+                <td>Dni:</td>
+                <td><input type="number" name="txtDni" id="txtDni" min="1000000" max="55000000" size="15"/>
+                <span id="spnDni" style="display:none"> *</span>
+                </td>
+
+            <tr>
+                <td>Apellido:</td>
+                <td><input type="text" name="txtApellido" id="txtApellido"/>
+                <span id="spnApellido" style="display:none"> *</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr></td>
+            </tr>
+            <tr align="right">
+                <td colspan="2"><input type="button" name="btnLimpiar" value="Limpiar"/></td>
+            </tr>
+            <tr align="right">
+                <td colspan="2"><input type="button" name="btnEnviar" value="Enviar" onclick="AdministrarValidacionesLogin()"/></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>

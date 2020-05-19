@@ -1,0 +1,9 @@
+body {
+    background-image: url("../img/alta.jpg");
+    font-family: Verdana, Geneva, sans-serif;
+  }
+  a{
+    font-size: large;
+  color:rgb(192, 0, 112);
+  font-weight: bold;
+}
