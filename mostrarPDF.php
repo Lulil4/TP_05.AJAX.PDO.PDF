@@ -4,11 +4,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 require_once './clases/empleado.php';
 $dni = isset($_SESSION["DNIEmpleado"]) ? $_SESSION["DNIEmpleado"] : NULL;
 
-$myPDF = new \Mpdf\Mpdf(['orientation' => 'P', 
-'pagenumPrefix' => 'Página nro. ',
-'pagenumSuffix' => ' - ',
-'nbpgPrefix' => ' de ',
-'nbpgSuffix' => ' páginas']);
+$myPDF = new \Mpdf\Mpdf(['orientation' => 'P']);
 
 $empleados = empleado::TraerTodosLosEmpleados();
 $empleadosHtml = "
