@@ -293,5 +293,5 @@ function ObtenerSueldoMaximo(turnoElegido: string): number {
 
         function mostrarPDF(dni : number){
             let parametros:string = `dni=${dni}`;
-            window.open('mostrarPDF.php', '_newtab')
+            window.open('mostrarPDF.php', '_self')
         }

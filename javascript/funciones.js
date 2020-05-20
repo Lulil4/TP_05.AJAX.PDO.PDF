@@ -266,5 +266,5 @@ function Fail(retorno) {
 }
 function mostrarPDF(dni) {
     var parametros = "dni=" + dni;
-    window.open('mostrarPDF.php', '_newtab');
+    window.open('mostrarPDF.php', '_self');
 }
