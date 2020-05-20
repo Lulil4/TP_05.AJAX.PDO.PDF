@@ -9,7 +9,7 @@ class AccesoDatos
         try {
             $usuario='luciamorel1';
             $clave='12345678';
-            $this->_objetoPDO = new PDO('mysql:host=db4free;dbname=empleados0;charset=utf8', $usuario, $clave);
+            $this->_objetoPDO = new PDO('mysql:host=db4free.net;dbname=empleados0;charset=utf8', $usuario, $clave);
  
         } catch (PDOException $e) {
  
