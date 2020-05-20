@@ -9,7 +9,7 @@ switch($queHago){
     case "mostrarEmpleados":
     $empleados = empleado::TraerTodosLosEmpleados();
     echo "
-        <table align='center' border='1'>
+        <table align='center'>
         <tr>
         <td colspan='4'><h2>Listado de Empleados</h2> </td>
        </tr>
